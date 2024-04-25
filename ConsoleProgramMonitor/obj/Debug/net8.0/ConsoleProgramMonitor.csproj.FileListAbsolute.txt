@@ -1,0 +1,15 @@
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\bin\Debug\net8.0\ConsoleProgramMonitor.exe
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\bin\Debug\net8.0\ConsoleProgramMonitor.deps.json
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\bin\Debug\net8.0\ConsoleProgramMonitor.runtimeconfig.json
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\bin\Debug\net8.0\ConsoleProgramMonitor.dll
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\bin\Debug\net8.0\ConsoleProgramMonitor.pdb
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\ConsoleProgramMonitor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\ConsoleProgramMonitor.AssemblyInfoInputs.cache
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\ConsoleProgramMonitor.AssemblyInfo.cs
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\ConsoleProgramMonitor.csproj.CoreCompileInputs.cache
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\ConsoleProgramMonitor.sourcelink.json
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\ConsoleProgramMonitor.dll
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\refint\ConsoleProgramMonitor.dll
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\ConsoleProgramMonitor.pdb
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\ConsoleProgramMonitor.genruntimeconfig.cache
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\ref\ConsoleProgramMonitor.dll
