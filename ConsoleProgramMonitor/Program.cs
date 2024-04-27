@@ -7,13 +7,29 @@ namespace GetProcess
     {
         static void Main(string[] args)
         {
-            Process[] list = Process.GetProcessesByName("test");
-        
-            foreach (var process in list)
+            if (args.Length == 3)
             {
-                Console.Out.WriteLine(process.ProcessName);
+                string ProcessName = args[0];
+
+                Process[] processes = Process.GetProcessesByName(ProcessName);
+
+                if(processes.Length > 0){
+                    Console.WriteLine("Process " + ProcessName + " is running.");
+
+                }
+
+                else{
+                    Console.WriteLine("Error: The process " + ProcessName +" is not running!");
+                    return;
+                }
+            
             }
-            Console.ReadLine();
+            else if (args.Length != 3)
+            {
+                Console.WriteLine("Error: Three arguments are required!");
+                return;
+            }
+
         }
     }
 }
