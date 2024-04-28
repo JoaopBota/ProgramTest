@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace GetProcess
 {
     class Program
     {
         private static volatile bool _s_stop = false;
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-
             ConsoleKeyInfo cki;
 
             Console.Clear();
@@ -36,46 +36,30 @@ namespace GetProcess
                 if (processes.Length > 0)
                 {
                     Console.WriteLine($"Info: Process '{processName}' is running.");
-
                     Console.WriteLine($"Info: Program.exe  is currently monitoring '{processName}' with a max lifetime of : [ '{maxLifetime}' minute(s) ] and with a monitoring frequency of : [ '{monitoringFrequency}' minute(s) ]");
-
                     Console.Write("\n\nPress the key 'Q' to quit");
 
                     Console.CancelKeyPress += new ConsoleCancelEventHandler(clickHandler);
-                    while (!_s_stop)
-                    {
-                        
 
+                    Task myTask = Task.Run(() => MyTaskMethod(processes, processName, maxLifetime, monitoringFrequency));
+
+                    while (true)
+                    {
                         if (Console.KeyAvailable)
                         {
                             cki = Console.ReadKey(true);
                             Console.WriteLine($"\n\nInfo: Exitting...");
                             if (cki.Key == ConsoleKey.Q) break;
                         }
-
-                         foreach (var process in processes)
-                        {
-                            TimeSpan processLifetime = DateTime.Now - process.StartTime;
-                            Console.WriteLine($"\n\nProcess '{processName}' lifetime: {processLifetime.TotalMinutes} minutes");
-                            if (processLifetime.TotalMinutes > maxLifetime)
-                            {
-                                Console.WriteLine($"\n\nProcess '{processName}' has exceeded the maximum lifetime. Killing process...");
-                                process.Kill();
-                                return;
-                            }
-                        }
-
-                        Thread.Sleep(monitoringFrequency * 60 * 1000); // Convert minutes to milliseconds
                     }
-                }
 
+                }
                 else
                 {
                     Console.WriteLine($"Error: The process '{processName}' is not running!");
                     return;
                 }
             }
-
             else if (args.Length != 3)
             {
                 Console.WriteLine("Error: Three arguments are required!");
@@ -83,10 +67,33 @@ namespace GetProcess
             }
         }
 
+        static async void MyTaskMethod(Process[] processes, string processName, int maxLifetime, int monitoringFrequency)
+        {
+            while (!_s_stop)
+            {
+
+                foreach (var process in processes)
+                {
+                    TimeSpan processLifetime = DateTime.Now - process.StartTime;
+                    Console.WriteLine($"\n\nProcess '{processName}' lifetime: {processLifetime.TotalMinutes} minutes");
+                    if (processLifetime.TotalMinutes > maxLifetime)
+                    {
+                        Console.WriteLine($"\n\nProcess '{processName}' has exceeded the maximum lifetime. Killing process...");
+                        process.Kill();
+                        return;
+                    }
+                }
+
+                await Task.Delay(monitoringFrequency * 60 * 1000); // Convert minutes to milliseconds
+            }
+
+
+        }
+
         protected static void clickHandler(object sender, ConsoleCancelEventArgs args)
         {
-            args.Cancel = true;
-            _s_stop = true;
+            Console.WriteLine($"\n\nInfo: Exiting...");
+            Environment.Exit(0);
         }
     }
 }
