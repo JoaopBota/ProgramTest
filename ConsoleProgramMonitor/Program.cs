@@ -16,8 +16,20 @@ namespace GetProcess
             if (args.Length == 3)
             {
                 string processName = args[0];
-                int maxLifetime = int.Parse(args[1]);
-                int monitoringFrequency = int.Parse(args[2]);
+                int maxLifetime;
+                int monitoringFrequency;
+
+                if (!int.TryParse(args[1], out maxLifetime))
+                {
+                    Console.WriteLine("Error: Second argument must be an integer!");
+                    return;
+                }
+
+                if (!int.TryParse(args[2], out monitoringFrequency))
+                {
+                    Console.WriteLine("Error: Third argument must be an integer!");
+                    return;
+                }
 
                 Process[] processes = Process.GetProcessesByName(processName);
 
@@ -27,26 +39,29 @@ namespace GetProcess
 
                     Console.WriteLine($"Info: Program.exe  is currently monitoring '{processName}' with a max lifetime of : [ '{maxLifetime}' minute(s) ] and with a monitoring frequency of : [ '{monitoringFrequency}' minute(s) ]");
 
+                    Console.Write("\n\nPress the key 'Q' to quit");
+
                     Console.CancelKeyPress += new ConsoleCancelEventHandler(clickHandler);
                     while (!_s_stop)
                     {
-                        Console.Write("\n\nPress the key 'Q' to quit");
-                        // Start a console read operation. Do not display the input.
-                        cki = Console.ReadKey(true);
+                        
 
-                        // Announce the name of the key that was pressed .
-                        Console.WriteLine($"\n\nInfo:  Exitting...");
+                        if (Console.KeyAvailable)
+                        {
+                            cki = Console.ReadKey(true);
+                            Console.WriteLine($"\n\nInfo: Exitting...");
+                            if (cki.Key == ConsoleKey.Q) break;
+                        }
 
-                        // Exit if the user pressed the 'X' key.
-                        if (cki.Key == ConsoleKey.Q) break;
-
-                        foreach (var process in processes)
+                         foreach (var process in processes)
                         {
                             TimeSpan processLifetime = DateTime.Now - process.StartTime;
+                            Console.WriteLine($"\n\nProcess '{processName}' lifetime: {processLifetime.TotalMinutes} minutes");
                             if (processLifetime.TotalMinutes > maxLifetime)
                             {
-                                Console.WriteLine($"Process '{processName}' has exceeded the maximum lifetime. Killing process...");
+                                Console.WriteLine($"\n\nProcess '{processName}' has exceeded the maximum lifetime. Killing process...");
                                 process.Kill();
+                                return;
                             }
                         }
 
