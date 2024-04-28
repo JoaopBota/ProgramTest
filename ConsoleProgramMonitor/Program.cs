@@ -41,7 +41,7 @@ namespace GetProcess
 
                     Console.CancelKeyPress += new ConsoleCancelEventHandler(clickHandler);
 
-                    Task myTask = Task.Run(() => MyTaskMethod(processes, processName, maxLifetime, monitoringFrequency));
+                    Task myTask = Task.Run(() => MonitorTask(processes, processName, maxLifetime, monitoringFrequency));
 
                     while (true)
                     {
@@ -52,7 +52,6 @@ namespace GetProcess
                             if (cki.Key == ConsoleKey.Q) break;
                         }
                     }
-
                 }
                 else
                 {
@@ -67,7 +66,7 @@ namespace GetProcess
             }
         }
 
-        static async void MyTaskMethod(Process[] processes, string processName, int maxLifetime, int monitoringFrequency)
+        static async void MonitorTask(Process[] processes, string processName, int maxLifetime, int monitoringFrequency)
         {
             while (!_s_stop)
             {
@@ -80,14 +79,12 @@ namespace GetProcess
                     {
                         Console.WriteLine($"\n\nProcess '{processName}' has exceeded the maximum lifetime. Killing process...");
                         process.Kill();
-                        return;
+                        Environment.Exit(0);
                     }
                 }
 
                 await Task.Delay(monitoringFrequency * 60 * 1000); // Convert minutes to milliseconds
             }
-
-
         }
 
         protected static void clickHandler(object sender, ConsoleCancelEventArgs args)

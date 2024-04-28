@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleProgramMonitor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1809c2bda57d776036b46c83e7e8ea185346eece")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5440ccf15aca0e4afecaf6a72f76b606ef483d49")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsoleProgramMonitor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsoleProgramMonitor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
