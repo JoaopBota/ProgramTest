@@ -7,7 +7,7 @@ namespace GetProcess
     class Program
     {
         private static volatile bool _s_stop = false;
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
             ConsoleKeyInfo cki;
 

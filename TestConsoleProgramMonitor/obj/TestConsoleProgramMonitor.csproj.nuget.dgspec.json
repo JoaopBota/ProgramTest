@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\foxd3\\Desktop\\Test_Task\\ConsoleProgramMonitor\\ConsoleProgramMonitor.csproj": {}
+    "C:\\Users\\foxd3\\Desktop\\Test_Task\\TestConsoleProgramMonitor\\TestConsoleProgramMonitor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\foxd3\\Desktop\\Test_Task\\ConsoleProgramMonitor\\ConsoleProgramMonitor.csproj": {
+    "C:\\Users\\foxd3\\Desktop\\Test_Task\\TestConsoleProgramMonitor\\TestConsoleProgramMonitor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\foxd3\\Desktop\\Test_Task\\ConsoleProgramMonitor\\ConsoleProgramMonitor.csproj",
-        "projectName": "ConsoleProgramMonitor",
-        "projectPath": "C:\\Users\\foxd3\\Desktop\\Test_Task\\ConsoleProgramMonitor\\ConsoleProgramMonitor.csproj",
+        "projectUniqueName": "C:\\Users\\foxd3\\Desktop\\Test_Task\\TestConsoleProgramMonitor\\TestConsoleProgramMonitor.csproj",
+        "projectName": "TestConsoleProgramMonitor",
+        "projectPath": "C:\\Users\\foxd3\\Desktop\\Test_Task\\TestConsoleProgramMonitor\\TestConsoleProgramMonitor.csproj",
         "packagesPath": "C:\\Users\\foxd3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\foxd3\\Desktop\\Test_Task\\ConsoleProgramMonitor\\obj\\",
+        "outputPath": "C:\\Users\\foxd3\\Desktop\\Test_Task\\TestConsoleProgramMonitor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\foxd3\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,9 +43,25 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
             "NUnit": {
               "target": "Package",
-              "version": "[4.1.0, )"
+              "version": "[3.14.0, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.9.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [

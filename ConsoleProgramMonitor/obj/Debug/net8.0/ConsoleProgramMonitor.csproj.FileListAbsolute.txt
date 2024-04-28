@@ -13,3 +13,7 @@ C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\refint\C
 C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\ConsoleProgramMonitor.pdb
 C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\ConsoleProgramMonitor.genruntimeconfig.cache
 C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\ref\ConsoleProgramMonitor.dll
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\bin\Debug\net8.0\nunit.framework.dll
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\bin\Debug\net8.0\nunit.framework.legacy.dll
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\ConsoleProgramMonitor.csproj.AssemblyReference.cache
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\ConsoleP.7ACA5B23.Up2Date

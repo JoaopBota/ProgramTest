@@ -196,3 +196,6 @@ C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\win-x64\
 C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\win-x64\ConsoleProgramMonitor.pdb
 C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\win-x64\ConsoleProgramMonitor.genruntimeconfig.cache
 C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\win-x64\ref\ConsoleProgramMonitor.dll
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\bin\Debug\net8.0\win-x64\nunit.framework.dll
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\bin\Debug\net8.0\win-x64\nunit.framework.legacy.dll
+C:\Users\foxd3\Desktop\Test_Task\ConsoleProgramMonitor\obj\Debug\net8.0\win-x64\ConsoleProgramMonitor.csproj.AssemblyReference.cache
