@@ -1,0 +1,55 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\foxd3\\Desktop\\Test_Task\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56370A47-233E-4275-B813-350FB772DAAF}|TestProgramMonitor\\TestProgramMonitor.csproj|c:\\users\\foxd3\\desktop\\test_task\\testprogrammonitor\\consoleprogrammonitortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56370A47-233E-4275-B813-350FB772DAAF}|TestProgramMonitor\\TestProgramMonitor.csproj|solutionrelative:testprogrammonitor\\consoleprogrammonitortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D837CBE5-BEA8-417B-9AB1-2241FC102B8A}|ConsoleProgramMonitor\\ConsoleProgramMonitor.csproj|c:\\users\\foxd3\\desktop\\test_task\\consoleprogrammonitor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D837CBE5-BEA8-417B-9AB1-2241FC102B8A}|ConsoleProgramMonitor\\ConsoleProgramMonitor.csproj|solutionrelative:consoleprogrammonitor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConsoleProgramMonitorTests.cs",
+              "DocumentMoniker": "C:\\Users\\foxd3\\Desktop\\Test_Task\\TestProgramMonitor\\ConsoleProgramMonitorTests.cs",
+              "RelativeDocumentMoniker": "TestProgramMonitor\\ConsoleProgramMonitorTests.cs",
+              "ToolTip": "C:\\Users\\foxd3\\Desktop\\Test_Task\\TestProgramMonitor\\ConsoleProgramMonitorTests.cs",
+              "RelativeToolTip": "TestProgramMonitor\\ConsoleProgramMonitorTests.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwD0AAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:16:13.147Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\foxd3\\Desktop\\Test_Task\\ConsoleProgramMonitor\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleProgramMonitor\\Program.cs",
+              "ToolTip": "C:\\Users\\foxd3\\Desktop\\Test_Task\\ConsoleProgramMonitor\\Program.cs",
+              "RelativeToolTip": "ConsoleProgramMonitor\\Program.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAgwF0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:21:40.103Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

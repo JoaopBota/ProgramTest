@@ -4,14 +4,14 @@ using System.Threading.Tasks;
 
 namespace GetProcess
 {
-    class Program
+    public class Program
     {
         private static volatile bool _s_stop = false;
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             ConsoleKeyInfo cki;
 
-            Console.Clear();
+            //Console.Clear();
 
             if (args.Length == 3)
             {
@@ -66,7 +66,7 @@ namespace GetProcess
             }
         }
 
-        static async void MonitorTask(Process[] processes, string processName, int maxLifetime, int monitoringFrequency)
+       public static async void MonitorTask(Process[] processes, string processName, int maxLifetime, int monitoringFrequency)
         {
             while (!_s_stop)
             {
